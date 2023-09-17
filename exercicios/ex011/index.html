@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+    <h1>Imagens Dinâmicas</h1>
+    <style>
+    body{
+        background-color: rgb(81, 81, 212);
+        color: white;
+        font: normal 16pt arial;
+    }
+    h1{
+        color: rgb(255, 201, 210);
+    }
+    </style>
+
+</head>
+
+<body>
+    <p>Tente abrir este site com tamanhos de telas diferentes.</p>
+    <picture>
+        <source media="(max-width: 720px)" srcset="midia/images/foto-p.png" type="image/png">
+        <source media="(max-width: 1020px)" srcset="midia/images/foto-m.png" type="image/png">
+        <img src="midia/images/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Escute este som:</p>
+    <audio preload="metadata" controls> <!-- mp3, wav, ogg-->
+        <source src="midia/audio/1968-track-tribe.mp3" type="audio/mpeg">
+        <source src="midia/audio/1968-track-tribe.wav" type="audio/wav">
+        <source src="midia/audio/1968-track-tribe.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta arquivos de áudio. <a href="midia/audio/1968-track-tribe.mp3" download="">CLIQUE AQUI</a> para baixar o arquivo.</p>
+    </audio>
+    <h1>Vídeo Hospedado Localmente</h1>
+    <video width="560" height="315"> <!-- POSTER: adicionar capa -->
+        <source src="midia/videos/vid-youtube.mp4" type="video/mp4">
+        <source src="midia/videos/vid-youtube.mkv" type="video/mp4">
+        <source src="midia/videos/vid-youtube.webm" type="video/webm">
+    </video>
+    <h1>Vídeo Hospedado no Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zxFwrfuWsjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+
+</html>

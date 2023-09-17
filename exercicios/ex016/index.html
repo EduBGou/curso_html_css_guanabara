@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            background-color: rgb(255, 255, 255);
+            margin: 0px;
+        }
+        header{
+            color: white;
+            text-align: center;
+            background-color: rgb(102, 0, 34);
+            padding: 10px;
+        }
+
+        main{
+            margin: 10px;
+        }
+        
+        nav > a{
+            font-size: 1.2em;
+            color: rgb(252, 44, 89);
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        div.comment{
+            display: inline-block;
+            background-image: linear-gradient(rgb(252, 44, 89), rgb(255, 144, 144));
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        p{
+            text-align: justify;
+        }
+        section#introduction{
+            color: rgb(50, 0, 0);
+            background-color: rgb(255, 173, 187);
+            border-radius: 20px;
+            padding: 5px;
+            margin: 10px 5px;
+        }
+        section#introduction > h2{
+            margin-left: 15px;
+        }
+        section#introduction > p{
+            text-indent: 30px;
+            margin: 10px 20px 15px 25px;
+        }
+        section#comments{
+            color: rgb(50, 0, 0);
+            background-color: rgb(253, 208, 208);
+            border-radius: 20px;
+            padding: 5px;
+            margin: 10px 5px;
+        }
+        h3.userName{
+            color: rgb(255, 240, 245);
+            text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.7);
+            margin-left: 10px;
+            
+        }
+        p.userOpinion{
+            color: rgb(50, 0, 0);
+            margin: 2px 15px;
+        }
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site de Vendas</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Serviço</a>
+            <a href="#">Contato</a>
+            <a href="#">Configurações</a>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Conheça Nossos Serviços</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum fuga possimus ipsum debitis quod excepturi, illo molestiae quis a quo? Delectus tenetur repellendus odit quam nobis quidem nesciunt perspiciatis maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ducimus aut dolorem enim, minus in quos ipsum voluptatibus necessitatibus distinctio sint esse molestiae iste molestias et blanditiis perspiciatis laborum ea.</p>
+        </section>
+        <section id="comments">
+            <h2>Opinião dos Usuários</h2>
+            <div class="comment">
+                <h3 class="userName">Eduardo</h3>
+                <p class="userOpinion">Gostei bastante do serviço, absurdamente bom, recomento para todos que querem uma ótima oportunidade de negócios.</p>
+            </div>
+            <div class="comment">
+                <h3 class="userName">Anônimo</h3>
+                <p class="userOpinion">Gostei bastante do serviço, absurdamente bom, recomento para todos que querem uma ótima oportunidade de negócios.</p>
+            </div>
+            <div class="comment">
+                <h3 class="userName">Aninônimo</h3>
+                <p class="userOpinion">Gostei bastante do serviço, absurdamente bom, recomento para todos que querem uma ótima oportunidade de negócios.</p>
+            </div>
+        </section>
+        <section id="conclusion">
+            <h2>Obrigado pela leitura</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod minus facilis facere unde dolore doloremque quibusdam obcaecati odit incidunt ipsam beatae magni ratione, nulla ab possimus architecto nobis asperiores. Iste.</p>
+        </section>
+    </main>
+    <footer>
+        <strong>Desenvolvido por:</strong> Eduardo Boaro Gouveia
+    </footer>
+</body>
+</html>

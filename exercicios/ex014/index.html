@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+            color: rgb(175, 105, 14);
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(114, 58, 2);
+        }
+        
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:active{ /*pseudo-classe */
+            color: rgb(255, 0, 0);
+        }
+        
+        .important::before{ /*pseudo-elemento*/
+            content: '→ ';
+            text-decoration: none;
+        }
+
+    </style>
+    <h1>Veja estes conteúdos</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=zxFwrfuWsjE&t=24s" target="_blank" class="important">Meu Vídeo no Youtube</a></li>
+
+        <li><a href="https://www.youtube.com/watch?v=GgZCN4VJQ-M" target="_blank">Vídeo no Youtube do Ciência todo dia</a></li>
+
+        <li><a href="adka" target="_blank">asda</a></li>
+    </ul>
+</head>
+<body>
+    
+</body>
+</html>
