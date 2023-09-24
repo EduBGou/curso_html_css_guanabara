@@ -9,9 +9,36 @@ header{
     color: white;
     text-align: center;
     background-image: linear-gradient(90deg, rgb(14, 14, 14), rgb(31, 31, 31), black);
-    padding: 5px;
+    padding: 20px;
+}
+header h1{
+    margin: 10px 0px;
+}
+header a{
+    text-decoration: none;
+    color: white;
 }
 
-header a{
+header span{
+    text-decoration: underline;
+}
+
+main{
+    margin: 20px 50px;
+}
+
+
+
+
+
+
+footer{
     color: white;
+    background-color: black;
+    padding: 5px;
+    
+}
+
+footer p{
+    margin-left: 20px;
 }
