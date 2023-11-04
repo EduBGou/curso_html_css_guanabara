@@ -6,12 +6,11 @@ function sumTotalPopulation(){
         total += lNum[i]
     }
     total = String(total)
+    // DAR ESPAÇO A CADA 3 CARACTERES, DIREITA P/ ESQUERDA
     for(let i = total.length; i > 0; i--){
         res.innerHTML += total[i - 1]
         if(i % 3 == 1 && i != 1){
             res.innerHTML += ' '
         }
     }
-    
-    
 }
