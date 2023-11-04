@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <script src="script002.js"></script>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 300px;
+            width: 60vw;
         }
         th, td{
-            border: 1px solid black;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
         }
-        th{
-            background-color: rgb(96, 151, 184);
+        td.num{
+            font-size: 0.9em;
+        }
+        thead{
+            background-color: rgb(204, 204, 204);
+        }
+        tfoot{
+            color: white;
+            background-color: brown;
+        }
+        tfoot th{
+            font-weight: normal;
+            text-align: left;
         }
     </style>
 </head>
-<body>
+<body onload="sumTotalPopulation()">
+    
     <h1>Uso de Tabelas Grandes</h1>
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
@@ -28,7 +42,7 @@
                 TR, TD, TH
             TBODY
                 TR, TD, TH
-            TFODT
+            TFOOT
                 TR, TD, TH
      -->
 <table>
@@ -41,9 +55,31 @@
     <tbody>
         <tr>
             <td>São Paulo</td>
-            <td>44 411 238</td>
+            <td class="num">44 411 238</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">20 538 718</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">16 054 524</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14 141 626</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num">11 444 380</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <th>POPULAÇÃO TOTAL</th>
+            <td class="num" id="res"></td>
+        </tr>
+    </tfoot>
 </table>
 </body>
 </html>
