@@ -10,6 +10,7 @@ function sumTotalPopulation(){
         44411238, 20538718, 16054524, 14141626, 11444380
     ]
 
+    // OUTROS VALORES DE ENTRADA BÁSICOS
     let res = document.getElementById('res')
     let total = 0
     for(let i = 0; i < lNumPopulation.length; i++){
@@ -45,7 +46,6 @@ function sumTotalPopulation(){
     }
 
     // ESCREVENDO O NÚMERO TOTAL DA POPULAÇÃO
-    // DAR ESPAÇO A CADA 3 CARACTERES, DIREITA P/ ESQUERDA
     total = String(total)
     res.innerHTML = ''
 
