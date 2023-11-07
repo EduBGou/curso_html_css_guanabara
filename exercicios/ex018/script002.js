@@ -1,16 +1,28 @@
 function sumTotalPopulation(){
+    // VALORES DA TABELA
+    let lNameStates = [
+        'São Paulo', 'Minas Gerais', 'Rio de Janeiro', 'Bahia', 'Paraná'
+    ]
+    let lUrlSites = [
+        'https://pt.wikipedia.org/wiki/São_Paulo_(estado)', 'https://pt.wikipedia.org/wiki/Minas_Gerais', 'https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)', 'https://pt.wikipedia.org/wiki/Bahia', 'https://pt.wikipedia.org/wiki/Paraná'
+    ]
+    let lNumPopulation = [
+        44411238, 20538718, 16054524, 14141626, 11444380
+    ]
+
     let res = document.getElementById('res')
-    let lNum = [44411238, 20538718, 16054524, 14141626, 11444380]
     let total = 0
-    for(let i = 0; i < lNum.length; i++){
-        total += lNum[i]
+    for(let i = 0; i < lNumPopulation.length; i++){
+        total += lNumPopulation[i]
     }
 
-    for(let i = 0; i < lNum.length; i++){
+    for(let i = 0; i < lNumPopulation.length; i++){
         let population = document.getElementById(`num0${i+1}`)
+        let states = document.getElementById(`name0${i+1}`)
         let noShowPopulation = ''
-        noShowPopulation += String(lNum[i])
+        noShowPopulation += String(lNumPopulation[i])
         population.innerHTML = ''
+        states.innerHTML = `<a href="${lUrlSites[i]}" target="_blank">${lNameStates[i]}</a>`
 
         // ESCREVENDO O NÚMERO DA POPULAÇÃO
         for(let y = 0; y < noShowPopulation.length; y++){

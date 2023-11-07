@@ -10,7 +10,8 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 60vw;
+            width: 70vw;
+            max-width: 650px;
             border-collapse: collapse;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
@@ -26,16 +27,26 @@
             padding: 5px;
         }
         thead{
-            background-color: rgb(204, 204, 204);
+            background-color: rgb(210, 210, 210);
         }
         tfoot{
             color: white;
-            background-color: brown;
+            background-color: rgb(200, 1, 1);
         }
-        tfoot th, td.num{
+        tfoot th{
             font-size: 0.9em;
             text-align: left;
         }
+        td.num{
+            font-size: 0.9em;
+            text-align: right;
+        }
+
+        a{
+
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body onload="sumTotalPopulation()">
@@ -56,38 +67,40 @@
         <caption>5 Estados mais Populosos do Brasil</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col">POPULAÇÃO</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td class="num" id="num01">numberExample</td>
+                <td id="name01"></td>
+                <td class="num" id="num01"></td>
             </tr>
             <tr>
-                <td>Minas Gerais</td>
-                <td class="num" id="num02">numberExample</td>
+                <td id="name02"></td>
+                <td class="num" id="num02"></td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num" id="num03">numberExample</td>
+                <td id="name03"></td>
+                <td class="num" id="num03"></td>
             </tr>
             <tr>
-                <td>Bahia</td>
-                <td class="num" id="num04">numberExample</td>
+                <td id="name04"></td>
+                <td class="num" id="num04"></td>
             </tr>
             <tr>
-                <td>Paraná</td>
-                <td class="num" id="num05">numberExample</td>
+                <td id="name05"></td>
+                <td class="num" id="num05"></td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>POPULAÇÃO TOTAL</th>
-                <td class="num" id="res">resultExample</td>
+                <th scope="row">POPULAÇÃO TOTAL</th>
+                <td class="num" id="res"></td>
             </tr>
         </tfoot>
     </table>
 </body>
+
+
 </html>
