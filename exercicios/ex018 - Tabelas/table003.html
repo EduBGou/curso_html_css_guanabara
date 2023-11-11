@@ -3,230 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efeito Zebrado</title>
+    <title>Mesclagem</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-
         table{
             border-collapse: collapse;
-            position: relative;
-            width: 800px;
-            max-width: 80vw;
-            margin: auto;
+            width: 300px;
         }
-
-        caption{
-            background-color: beige;
-            font-weight: bold;
-            font-size: 1.4em;
-            padding: 3px;
-            border: 1px solid black;
-            border-bottom: 0px;
-        }
-
-        tbody > tr:nth-child(2n){
-            background-color: rgb(235, 235, 235);
-        }
-
-        thead > tr > th{
-            position: sticky; 
-            /*SEI LÁ OQ FAZ, MAS FUNCIONA*/
-            top: -1px;
-            background-color: rgb(192, 171, 144);
-        }
-
-        td, th{
+        td{
+            text-align: center;
+            padding: 5px;
             border: 1px solid black;
         }
     </style>
 </head>
 <body>
-    <h1>Efeito Zebrado em Tabelas</h1>
+    <h1>Mesclagem de Tabelas</h1>
     <table>
-        <caption>Tabela Zebrada</caption>
-            <thead>
-                <tr>
-                    <th>Não-Escrito</th>
-                    <th>Escrito por Extenso</th>
-                    <th>Jogo de Cartas Zoado</th>
-                    <th>Opinião Alheia</th>
-                </tr>
-            </thead>
+        <caption>Tabela Mesclada</caption>
+        <thead></thead>
         <tbody>
-        
             <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
             </tr>
             <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
             </tr>
             <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
             </tr>
             <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
             </tr>
             <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
+                <td colspan="4">M</td>
             </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Um</td>
-                <td>Uno</td>
-                <td>Nada de Relevante</td>
-            </tr>
-    </tbody>
-
+        </tbody>
     </table>
 </body>
 </html>
