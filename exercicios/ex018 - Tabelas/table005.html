@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroups</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .softBlue{
+            background-color: rgb(160, 160, 255);
+        }
+        .softRed{
+            background-color: rgb(255, 160, 160);
+        }
+    </style>
+</head>
+<body>
+    <h1>Colgroups</h1>
+    <table>
+        <colgroup>
+            <col class="softBlue" span="2">
+            <col class="softRed">
+            <col class="softBlue">
+        </colgroup>
+        <caption>Tabela de Exemplo</caption>
+        <thead>
+            <tr>
+                <th scope="colgroup" colspan="2">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+            <tr>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
