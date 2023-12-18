@@ -10,7 +10,7 @@ body{
 
 header{
     color: white;
-    background-image: linear-gradient(45deg, rgb(70, 90, 170), rgb(25, 25, 118), rgb(45, 85, 214));
+    background-image: linear-gradient(45deg, rgb(45, 85, 214), rgb(25, 25, 118), rgb(70, 90, 170));
     padding: 20px 0px 10px;
     margin: 0px;
 }
@@ -26,6 +26,8 @@ header p{
 
 nav a{
     color: rgb(220, 220, 255);
+    font-weight: bold;
+    transition-duration: 0.3s;
     text-decoration: none;
     padding: 8px;
     border-radius: 5px;
@@ -33,21 +35,29 @@ nav a{
 }
 
 nav a:hover{
-    color: rgb(150, 150, 255);
-    text-decoration: underline;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    background-color: rgb(242, 240, 255);
+    color:  rgb(45, 85, 214);
+    text-shadow: 0px 0px 8px rgb(25, 25, 118, 0.6);
 }
 
 
 /* MAIN */
-
 main{
-    
-    margin: 0px 10px;
+    margin: 0px 20px;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 div#mainContent{
-    margin-right: 30vw;
+    max-width: 70%;
+    margin-right: 30px;
+}
+
+div#sideContent{
+    max-width: 30%;
 }
 
 main h1{
@@ -60,17 +70,15 @@ main p{
 }
 
 img{
-    width: 80vw; max-width: 600px;
-    height: 360px;
+    min-width: 300px; max-width: 800px;
+    width: 100%;
     display: block;
-    border: 5px solid rgb(0, 0, 255);
+    border: 3px solid rgb(0, 0, 255);
+    border-radius: 5px;
     margin: auto;
 }
 
-
-
 /* FOOTER */
-
 footer{
     color: white;
     background-color: rgb(10, 10, 50);
