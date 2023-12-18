@@ -70,7 +70,7 @@ main p{
 }
 
 img{
-    min-width: 300px; max-width: 800px;
+    min-width: 300px; max-width: 600px;
     width: 100%;
     display: block;
     border: 3px solid rgb(0, 0, 255);
