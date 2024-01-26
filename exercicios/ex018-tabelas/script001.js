@@ -65,6 +65,5 @@ function sumTotalPopulation(){
                 }
             }
         }
-
     }
 }
